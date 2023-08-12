@@ -1,0 +1,17 @@
+.navcontainer{
+    width: 100vw;
+    height: 80px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.navcontent{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
