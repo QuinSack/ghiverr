@@ -11,6 +11,10 @@
     position: relative;
   }
 
+.dropdown-wrapper:hover {
+    border-bottom: 10px solid rgb(123, 202, 5);
+  }
+
 .dropdown-trigger {
     cursor: pointer;
   }
@@ -18,9 +22,9 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 0;
-    background-color: #fff;
+    background-color: #cacaca;
     border: 1px solid #ccc;
     padding: 10px;
     width: 80vw;
