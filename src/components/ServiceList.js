@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../styles/ServiceList.css'
 import GraphicDesignDropdown from './service-dropdownlist/GraphicDesignDropdown'
 import ProgrammingDropdown from './service-dropdownlist/ProgrammingDropdown';
+import DigitalMarketingDropdown from './service-dropdownlist/DigitalMarketingDropdown';
 
 const ServiceList = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -31,7 +32,14 @@ const ServiceList = () => {
                 </div>
             )}
         </div>
-        <h6>Digital Marketing</h6>
+        <div className='dropdown-wrapper' onMouseEnter={handleDropdownToggle} onMouseLeave={handleDropdownLeave}>
+            <h6 className='dropdown-trigger'>Digital Marketing</h6>
+            {isDropdownOpen && (
+                <div className='dropdown-content'>
+                    <DigitalMarketingDropdown />
+                </div>
+            )}
+        </div>
         <h6>Video & Animation</h6>
         <h6>Writing & Translation</h6>
         <h6>Music & Audio</h6>
